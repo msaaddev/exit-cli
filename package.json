@@ -1,6 +1,6 @@
 {
 	"name": "exit-cli",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A nice way to end your command line tool",
 	"repository": "https://github.com/msaaddev/exit-cli",
 	"author": {

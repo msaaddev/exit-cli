@@ -32,7 +32,7 @@ const notifyUpdate = async pkgJSON => {
 		);
 		console.log(
 			'You can update by running: ' +
-				chalk.cyan(`npm i -g ${pkgJSON.name}`)
+				chalk.cyan(`npm i -g ${pkgJSON.name}@latest`)
 		);
 		console.log();
 	}
@@ -41,14 +41,14 @@ const notifyUpdate = async pkgJSON => {
 module.exports = async (opt = {}) => {
 	const defaultOptions = {
 		pkgJSON: ``,
-		gitHub: ``,
+		github: ``,
 		twitter: ``
 	};
 
 	const options = { ...defaultOptions, ...opt };
 
-	options.gitHub === ``
-		? (options.gitHub = `Here goes your repository link`)
+	options.github === ``
+		? (options.github = `Here goes your repository link`)
 		: null;
 	options.twitter === ``
 		? (options.twitter = `Here goes your twitter account link`)
@@ -59,7 +59,7 @@ module.exports = async (opt = {}) => {
 
 	table.push([
 		`${chalk.bgYellow.hex(`#000000`).bold(` Star `)}`,
-		`${options.gitHub}`.grey
+		`${options.github}`.grey
 	]);
 	table.push([
 		`${chalk.bgCyan.hex(`#000000`).bold(` Follow `)}`,

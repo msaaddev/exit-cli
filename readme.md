@@ -58,7 +58,7 @@ await end({
 const end = require('exit-cli');
 const packageJSON = require('./package.json');
 
-// without package.json file
+// with package.json file
 await end({
 	github: `https://github.com/msaaddev/exit-cli`,
 	twitter: `https://twitter.com/msaaddev`,

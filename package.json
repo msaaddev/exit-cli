@@ -1,0 +1,39 @@
+{
+	"name": "exit-cli",
+	"version": "1.0.0",
+	"description": "A nice way to end your command line tool",
+	"repository": "https://github.com/msaaddev/exit-cli",
+	"author": {
+		"name": "Saad Irfan",
+		"email": "mrsaadirfan@gmail.com",
+		"url": "https://twitter.com/msaaddev"
+	},
+	"main": "index.js",
+	"license": "MIT",
+	"files": [
+		"index.js"
+	],
+	"dependencies": {
+		"chalk": "^4.1.1",
+		"cli-table": "^0.3.6",
+		"colors": "^1.4.0",
+		"update-check": "^1.5.4"
+	},
+	"devDependencies": {
+		"node-cli-handle-error": "^1.0.0",
+		"prettier": "^2.3.2"
+	},
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\"",
+		"test": "node test.js"
+	},
+	"keywords": [
+		"command line tool",
+		"cli",
+		"footer",
+		"cli exit",
+		"Saad Irfan",
+		"msaaddev",
+		"nodejs cli"
+	]
+}

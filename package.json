@@ -35,6 +35,8 @@
 		"cli exit",
 		"Saad Irfan",
 		"msaaddev",
-		"nodejs cli"
+		"nodejs cli",
+		"update check",
+		"notify update"
 	]
 }
